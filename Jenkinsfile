@@ -17,6 +17,20 @@ pipeline {
 			}
 		}	
 	}
+	post{
+		always{
+			echo "Furuloooo"
+		}
+		success{
+			echo "jalo esta madre"
+		}
+		failure{
+			echo "VALIO MADREEEE"
+		}
+		finally{
+			echo "a chingar as u madre"
+		}
+	}
 }
 
 /**node {
