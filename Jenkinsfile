@@ -27,9 +27,6 @@ pipeline {
 		failure{
 			echo "VALIO MADREEEE"
 		}
-		finally{
-			echo "a chingar as u madre"
-		}
 	}
 }
 
