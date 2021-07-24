@@ -1,4 +1,25 @@
-node {
+pipeline {
+	agent any
+	stages {
+		stage('Build'){
+			steps{
+				echo "Build"
+			}
+		}
+		stage('Test'){
+			steps{
+				echo "Teste"
+			}
+		}
+		stage('IT'){
+			steps{
+				echo "IT TEEEESTY"
+			}
+		}	
+	}
+}
+
+/**node {
 	stage('Build') {
 		echo "Build"
 	}
@@ -9,3 +30,4 @@ node {
 		echo "TEST IT"
 	}
 }
+*//
