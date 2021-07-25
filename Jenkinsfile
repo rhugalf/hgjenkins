@@ -3,12 +3,19 @@ pipeline {
 	stages {
 		stage('Build'){
 			steps{
+
 				echo "Build"
+				echo "$PATH"
+				echo "build number - $env.BUILD_NUMBER"
+				echo "$env.BUILD_ID"
+				echo "$env.JOB_NAME"
+				echo "$env.BUILD_TAG"
 			}
 		}
 		stage('Test'){
 			steps{
 				echo "Teste"
+				sh 'env'
 			}
 		}
 		stage('IT'){
